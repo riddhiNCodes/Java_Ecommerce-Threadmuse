@@ -1,0 +1,97 @@
+h1.title{
+	color:#2f5d4c;
+    text-shadow:1px 1px 2px  grey;
+    font-family: 'Playfair Display', serif;
+}
+ .image-container {
+    
+    height: 330px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+
+.product-img {
+    height: 200px;
+    width: 100%;
+    object-fit:cover;
+    object-position:center;
+    background: #f8f8f8;
+    padding: 10px;
+    flex-shrink:0;
+}
+.card {
+	font-family: serif;
+     transition: transform 0.3s ease, box-shadow 0.3s ease; 
+ 	height:400px;
+    background-color: ivory;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 1px solid black;
+    border-radius: 16px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+}
+
+
+.card-title{
+	font-size:20px;/*  */
+	    font-weight: 600;
+       margin-bottom: 12px;
+}
+
+.dis{
+	color:#FFD700;
+	text-decoration:underline;
+}
+.btn{
+	margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+a.btn-update{
+  background-color:#2f5d4c;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  padding: 10px;
+  box-shadow:1px 1px 2px grey;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+a.btn-update:hover {
+  background: linear-gradient(to right, #d4af37, #3e7b63);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  color:white;
+
+}
+a.btn-rem{
+	background-color:#d9534f;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  padding: 10px;
+  box-shadow:1px 1px 2px grey;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+a.btn-rem:hover{
+	background: linear-gradient(to right, #d4af37, #d9534f,#d9534f);
+	color:white;
+	 transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}

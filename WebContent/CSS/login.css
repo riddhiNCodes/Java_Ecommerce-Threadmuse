@@ -1,0 +1,133 @@
+html, body {
+  position: relative;
+  z-index: 0;
+}
+  body {
+  margin:0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  /*height: 80vh;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Gradient overlay */
+  background: linear-gradient(to right, #e8dfd8, #f6f3ef);
+  position: relative;
+  
+}
+
+
+/* 
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("Images/logoplain.png");
+  background-repeat: repeat;   Tiled effect
+  background-size: 200px;      adjust tile size
+  opacity: 0.10;               faint watermark
+  z-index: 0;
+}
+
+ */
+ 
+ .login-container {
+  background-color: #ffffff;
+  margin: 1rem;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* stays above watermark */
+
+}
+
+
+ .login-logo {
+
+  width: 80px;      
+ 
+}
+
+.login-box h2 {
+  color: #2f5d4c;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.login-box h2::after {
+  content: "";
+  display: block;
+  margin: 8px auto 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #d4af37, #2f5d4c); /* gold → green */
+  border-radius: 2px;
+}
+
+
+.login-box p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 12px 15px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: #2f5d4c; /* deep green */
+  box-shadow: 0 0 6px rgba(212, 175, 55, 0.5); /* soft gold glow */
+}
+
+input:focus {
+  border-color: #2f5d4c;
+}
+
+.btn-signin {
+  background-color: #2f5d4c;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn-signin:hover {
+  background: linear-gradient(to right, #d4af37, #3e7b63);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+
+.links {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.links a {
+  color: #2f5d4c;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  text-decoration-color: #FFD700;
+}
