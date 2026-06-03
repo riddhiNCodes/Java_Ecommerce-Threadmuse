@@ -22,6 +22,7 @@ IMPORTANT FIX (Mandatory):
 9. Targeted Runtimes → Select Tomcat 10
 10. Apply → OK
 11. Project → Clean
+12. Add ' product_img' folder 
 
 Database Setup:
 1. Start XAMPP → MySQL
